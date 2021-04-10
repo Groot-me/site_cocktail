@@ -1,0 +1,42 @@
+html {
+     height: 100%;
+ }
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(blue, purple) fixed;
+}
+
+h1, h2 {
+    color: white;
+    margin: 1%;
+}
+
+
+#cocktails_list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#cocktails_list p{
+    color: white;
+    font-family: Georgia;
+}
+
+#cocktails_list>div{
+    display : flex;
+    flex-direction : column;
+    outline : 1px solid white;
+    margin : 1%;
+    height : 150px;
+    width : fit-content;
+    padding : 10px;
+    background-color : #222222;
+    flex-wrap: wrap;
+    justify-content :center;
+    padding-right : 200px
+}

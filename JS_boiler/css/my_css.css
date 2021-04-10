@@ -1,0 +1,122 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(blue, purple);
+}
+
+html {
+    height: 100%;
+}
+
+#main_bar {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right:200px;
+
+}
+
+h1,h2,h3,h4,h5 {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.inputliketext {
+    color: white;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+#main_bar {
+    border-bottom: black 6px solid;
+    margin-bottom: 20px;
+}
+
+#main_bar h1 {
+    color: white;
+    font-family: Georgia;
+}
+
+#formulaire_connexion #message {
+    color: red;
+    margin-bottom: 5px;
+}
+
+#Main_content {
+    margin: 20px;
+}
+
+#Main_content label {
+    font-weight: 800;
+}
+
+#Main_content button {
+    margin-left: 10px;
+}
+
+#message_formulaire {
+    margin : 20px;
+}
+
+#liste_of_cocktails {
+    margin: 20px;
+}
+
+#liste_of_cocktails div {
+    padding: 10px;
+    border: black 3px solid ;
+    width: fit-content;
+    margin-bottom: 20px ;
+}
+
+
+#Main_container {
+    display: flex;
+}
+
+#left_side {
+    padding-left: 50px;
+    width: 40%;
+    height: 100%;
+}
+
+#right_side {
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+#right_side img {
+    padding-left: 5%;
+    width: 300px;
+    height: 200px;
+}
+
+.no_margin {
+    margin: 0px;
+}
+
+.basic_size {
+    margin-top: 5%;
+    margin-left: 20%;
+    height: auto !important;
+    width: auto !important;
+}
+
+#url_liste_cocktail {
+    height: 100%;
+    width: 100%;
+}

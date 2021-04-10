@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Cocktail bar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+	<link rel="icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/my_css.css">
+
+        <meta name="theme-color" content="#fafafa">
+    </head>
+
+    <body>
+        <!-- barre principale de connexion -->
+        <div id="main_bar" >
+            <h1> Bienvenue dans la maison du cocktail ! </h1>
+
+            <div id="formulaire_connexion">
+                <div id="message" style="display: none"></div>
+                <div id="login-logout" style="display: none"></div>
+            </div>
+        </div>
+
+        <div id="Main_container">
+            <!-- partie gauche du site  -->
+            <div id="left_side">
+
+                <!-- selecteur pour les cocktails, ingredient, unité -->
+                <div id="button_choice" style="display: none"> </div>
+
+                <!-- formulaire pour chaque choix -->
+                <div id="Main_content">
+                    <form id="cocktail_form" method="get" action="php/Cocktail/cocktail.php" > </form>
+                </div>
+
+                <!-- messsage d'erreur ou de succés des formulaires -->
+                <div id="message_formulaire" style="display: none" > </div>
+
+                <!--affiche ingredient et unite-->
+                <ul id="liste_of_thing" > </ul>
+                <!--affiche cocktail-->
+                <div id="liste_of_cocktails"> </div>
+            </div>
+
+            <!-- partie droite du site  -->
+            <div id="right_side" style="display: none">
+                <h1> Pour créer un cocktail c'est juste la !!! </h1>
+                <img src="./img/left_arrow.png">
+                <h1> Pour créer un cocktail c'est juste la !!! </h1>
+                <br>
+                <h1 class="no_margin"> Et si vous n'avez pas d'idée, j'ai une  </h1>
+                <h1 class="no_margin"> liste de cocktail déjà faite pour vous </h1>
+                <a id="url_liste_cocktail" href="liste_cocktails.html" target="_blank">
+                    <img src="icon.png" class="basic_size">
+                </a>
+
+            </div>
+        </div>
+
+
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/login_logout.js"></script>
+        <script type="module" src="js/modules/mod_ingredient.js"></script>
+        <script type="module" src="js/modules/mod_unite.js"></script>
+        <script type="module" src="js/modules/mod_cocktail.js"></script>
+
+    </body>
+
+</html>
